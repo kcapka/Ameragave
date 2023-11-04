@@ -1,0 +1,957 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: "AmericanScribe";
+    src: url('./Fonts/AmericanScribe.ttf') format('opentype');
+}
+@font-face {
+    font-family: "Revelstoke";
+    src: url('./Fonts/Revelstoke-Bold.otf');
+}
+
+@font-face {
+    font-family: "AlbertSans";
+    src: url('./Fonts/AlbertSans-Regular.ttf');
+}
+
+
+/* OUR PROCESS/BANNER */
+
+.banner{
+    background-image: url('./imgs/process-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.ourprocess{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    align-items: center;
+    padding: 50px 200px 0;
+}
+
+.minilogo-lines{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.minilogo-lines img{
+    width: 25px;
+    margin: 0 10px;
+}
+
+.minilogo-lines hr{
+    border: 0.5px solid #7eafb9;
+    width: 70px;
+    height: 1px;
+
+}
+
+.process-text{
+    width: 280px;
+    text-align: center;
+    margin: 0 50px;
+}
+
+.process-text p{
+    line-height: 1.3;
+    font-family: 'AlbertSans';
+    font-size: 13px;
+    color: #1d3339;
+}
+
+.process-text #our{
+    font-family: 'AmericanScribe';
+    font-size: 57px;
+    color: #7fb0ba;
+}
+
+.process-text #process{
+    font-family: 'Revelstoke';
+    font-size: 53px;
+    color: #376169;
+    margin-left: 15px;
+}
+
+.ourprocess .bottles img{
+    width: 120px;
+    height: auto;
+    filter: drop-shadow(20px 25px 10px rgb(0,0,0,0.3));
+}
+
+.bottles{
+    text-align: center;
+}
+
+.bottles h2{
+    font-family: 'Revelstoke';
+    color: #376169;
+    font-size: 27px;
+    margin: 15px 0 25px;
+}
+
+.bottles a{
+    font-family: 'Revelstoke';
+    font-size: 16px;
+    border: 1px solid #376169;
+    border-radius: 40px;
+    text-decoration: none;
+    color: #376169;
+    padding: 10px 20px;
+    transition: 0.5s;
+}
+
+.bottles a:hover{
+    background-color: rgba(50, 88,95, 0.6);
+    color: white;
+}
+
+#mobile-bottle{
+    display: none;
+}
+
+/* HARVESTING THE AGAVE HEART */
+
+.harvesting{
+    text-align: center;
+    background: white;
+    width: 515px;
+    margin-top: 50px;
+    padding: 50px 40px;
+}
+
+.harvesting h3{
+    font-family: 'AmericanScribe';
+    font-size: 57px;
+    font-weight: normal;
+    color: #7fb0ba;
+}
+
+.harvesting h2{
+    font-family: 'Revelstoke';
+    font-weight: normal;
+    font-size: 53px;
+    color: #376169;
+    margin-bottom: 30px;
+}
+
+.harvesting p{
+    font-family: 'AlbertSans';
+    font-size: 13px;
+    line-height: 1.3;
+    color: #575757;
+}
+
+/* 'DIFFERENCE' SECTION */
+
+.difference{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('./imgs/difference-bkg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.minilogo-lines-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.minilogo-lines-2 img{
+    width: 25px;
+    margin: 0 10px;
+}
+
+.minilogo-lines-2 hr{
+    border: 0.5px solid #faada9;
+    width: 70px;
+    height: 1px;
+
+}
+
+.dif-title{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px;
+}
+
+.dif-title h3{
+    font-family: 'AmericanScribe';
+    font-weight: normal;
+    color: #faada9;
+}
+
+.dif-title h2{
+    font-family: 'Revelstoke';
+    font-weight: normal;
+    color: white;
+}
+
+.dif-imgs{
+    width: 450px;
+    filter: drop-shadow(30px 40px 15px rgba(205, 82,76, 0.7));
+}
+
+.dif-text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+}
+
+
+.top p{
+    width: 450px;
+    font-family: "AlbertSans";
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.3;
+    margin-right: 20px;
+}
+
+.bottom{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+}
+
+.bottom p{
+    width: 450px;
+    font-family: "AlbertSans";
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.3;
+    margin-left: 20px;
+}
+
+.dif-text .top h1{
+    font-family: 'Revelstoke';
+    font-weight: normal;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+/* 'LEFT' AND 'RIGHT' BELOW ARE USED THROUGHOUT REST OF MAIN PAGE */
+
+.left h1{
+    font-family: 'Revelstoke';
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.left p{
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.3;
+    margin-bottom: 80px;
+    font-family: 'AlbertSans';
+}
+
+.right p{
+    font-family: 'AlbertSans';
+    font-size: 13px;
+    line-height: 1.3;
+    margin-top: 30px;
+}
+
+.left{
+    width: 450px;
+    color: white;
+    margin-left: 10%;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.right{
+    width: 450px;
+    color: white;
+    margin-right: 10%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* NO ADDITIVES SECT */
+
+.additives{
+    display: flex;
+    justify-content: space-between;
+    background-image: url('./imgs/addidive-bkg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+}
+
+.additives .left h1{
+    color: #685a47;
+    margin-top: 50px;
+    font-weight: normal;
+}
+
+.additives .left p{
+    color: #685a47;
+}
+
+.additives .right img{
+    filter: drop-shadow(30px 30px 15px rgba(199, 178,146, 1));
+    margin-top: 70px;
+    width: 450px;
+}
+
+/* AGING SECTION */
+
+.aging{
+    background-image: url('./imgs/aging-bkg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.aging .left{
+    align-self: center;
+}
+
+.aging .left img{
+    filter: drop-shadow(30px 30px 10px rgba(85, 176,195, 0.7));
+}
+
+.aging .right{
+    align-self: center;
+}
+
+.aging .right h1{
+    font-family: 'Revelstoke';
+    font-weight: normal;
+    color: #0f4f5a;
+    font-size: 30px;
+}
+
+.aging .right p{
+    color: #0f4f5a;
+}
+
+/* OAK SECTION */
+
+.oak{
+    background-image: url('./imgs/Oak-bkg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.oak .left{
+    align-self: center;
+}
+
+.oak .left h1{
+    margin-top: 60px;
+    color: #fffbfc;
+    font-weight: normal;
+}
+
+.oak .right{
+    align-self: center;
+}
+
+.oak .right p{
+    color: #fffbfc;
+}
+
+.oak .right img{
+    filter: drop-shadow(30px 30px 10px rgba(36, 99,118, 0.7));
+}
+
+/* SUSTAINABILITY */
+
+.sustainability{
+    background-image: url('./imgs/difference-bkg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.sustainability .right{
+    align-self: center;
+    font-family: 'AlbertSans';
+}
+
+.sustainability .right h1{
+    font-family: 'Revelstoke';
+    font-weight: normal;
+    padding-top: 50px;
+}
+
+.sustainability .left img{
+    width: 400px;
+    padding-left: 50px;
+    filter: drop-shadow(10px 50px 10px rgba(215, 79,75, 0.5));
+}
+
+/* INNOVATION */
+
+.innovation{
+    background-image: url('./imgs/innovation-bkg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.innovation .left{
+    color: #645c4d;
+    margin-top: 20px;
+}
+
+.innovation .left h1{
+    font-weight: normal;
+}
+
+.innovation .right img{
+    filter: drop-shadow(30px 30px 15px rgba(200, 179,147, 1));
+}
+
+/* PREFOOTER */
+
+.prefooter{
+    background-image: url('./imgs/pre-footer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 800px;
+}
+
+.minilogo-lines-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.minilogo-lines-3 img{
+    width: 25px;
+    margin: 0 10px;
+}
+
+.minilogo-lines-3 hr{
+    border: 0.5px solid white;
+    width: 70px;
+    height: 1px;
+}
+
+.prefooter p{
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: 'AlbertSans';
+    color: #d1d7db;
+    margin-top: 30px;
+}
+
+.prefooter-text{
+    width: 37%;
+    margin-top: 100px;
+}
+
+/* RESPONSIVENESS */
+
+
+/* MID-SIZE SCREENS */
+@media only screen and (max-width: 1100px){
+
+    .process-text #our{
+        font-size: 50px;
+    }
+    .process-text #process{
+        font-size: 45px;
+    }
+
+    .bottles a{
+        font-size: 10px;
+    }
+
+    .ourprocess .bottles img{
+        width: 100px;
+    }
+
+    .dif-imgs{
+        width: 350px;
+    }
+
+    .dif-text p{
+        z-index: 1;
+    }
+
+    .left h1{
+        font-size: 25px;
+    }
+
+    .aging .right h1{
+        font-size: 25px;
+    }
+
+    .right h1{
+        font-size: 25px;
+    }
+
+    .additives .right img{
+        width: 400px;
+    }
+
+    .aging .left img{
+        width: 400px;
+    }
+
+    .oak .right img{
+        width: 400px;
+    }
+
+    .sustainability .left img{
+        width: 400px;
+    }
+
+    .innovation .right img{
+        width: 400px;
+    }
+}
+
+/* MOBILE */
+
+@media only screen and (max-width: 800px){
+
+
+    /* BANNER */
+
+    .banner{
+        background-image: none;
+        padding-bottom: 0;
+    }
+
+    .right{
+        margin-right: 0;
+        margin-left: 0;
+        text-align: center;
+        width: 300px;
+        align-self: center;
+    }
+
+    .left{
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        width: 300px;
+        align-self: center;
+    }
+    
+    #mobile-bottle{
+        display: inline;
+    }
+
+    #desktop-bottle{
+        display: none;
+    }
+
+    .ourprocess{
+        flex-direction: column;
+        padding: 50px 0 0;
+        background-image: url('./imgs/mobile-process-bkg.png');
+        background-position: 50% 50%;
+        background-size: cover;
+        width: 100%;
+    }
+
+    .process-text #our{
+        font-size: 45px;
+    }
+    .process-text #process{
+        font-size: 40px;
+    }
+
+    .process-text p{
+        font-size: 14px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .right-bottles{
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: 100px;
+        padding: 0 50px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .right-bottles a{
+        font-size: 15px;
+    }
+
+    /* HARVESTING */
+
+    .harvesting-cont{
+        background-image: url('./imgs/mobile-harvest-bkg.png');
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        height: 500px;
+    }
+
+    .harvesting{
+        text-align: center;
+        width: 90%;
+        position: absolute;
+        top: 100px;
+        padding: 30px 15px;
+    }
+
+    .harvesting h3{
+        font-size: 40px;
+    }
+    
+    .harvesting h2{
+        font-size: 30px;
+    }
+    
+    .harvesting p{
+        font-size: 13px;
+        line-height: 1.1;
+    }
+
+    .black-bkg{
+        height: 100px;
+        background-color: rgb(0,0,0);
+    }
+
+    .minilogo-lines{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .minilogo-lines img{
+        width: 18px;
+        margin: 0 10px;
+    }
+    
+    .minilogo-lines hr{
+        border: 0.5px solid #7eafb9;
+        width: 50px;
+        height: 1px;
+    
+    }
+
+/* DIFFERENCE SECTION */
+
+    .difference{
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .dif-title{
+        font-size: 20px;
+    }
+
+    .dif-title h3{
+        font-size: 45px;
+    }
+
+    .minilogo-lines-2 img{
+        width: 15px;
+    }
+    
+    .minilogo-lines-2 hr{
+
+        width: 45px;
+    
+    }
+
+    .dif-text{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .dif-text .top{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dif-text .top img{
+        order: 1;
+        width: 350px;
+    }
+
+    .dif-text .top .top-text{
+        order: 2;
+    }
+
+    .dif-text .bottom{
+        flex-direction: column;
+    }
+
+    .top p{
+        width: 325px;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+
+    .bottom{
+        margin-top: 0;
+    }
+
+    .bottom p{
+        width: 325px;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+
+    .bottom img{
+        width: 350px;
+        padding-bottom: 40px;
+    }
+
+    .top .top-text h1{
+        font-size: 22px;
+        margin-top: 40px;
+    }
+
+    /* ADDITIVES SECTION */
+
+    .additives{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .additives .right img{
+        width: 350px;
+        margin-top: 50px;
+        align-self: center;
+    }
+
+    .additives .right{
+        order: 1;
+    }
+    
+    .additives .left{
+        order: 2;
+    }
+
+    .additives .left h1{
+        margin-bottom: 30px;
+        font-size: 25px;
+    }
+
+    .additives .left p{
+        margin-top: 0;
+        margin-bottom: 30px;
+        width: 325px;
+        align-self: center;
+
+    }
+
+    /* AGING */
+
+    .aging{
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .aging .left img{
+        width: 350px;
+        align-self: center;
+    }
+
+    .aging .right h1{
+        margin-top: 40px;
+        z-index: 1;
+        font-size: 24px;
+    }
+
+    .aging .right p{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 325px;
+        align-self: center;
+
+    }
+
+    /* OAK */
+
+    .oak{
+        flex-direction: column;
+    }
+
+    .oak .left{
+        order: 2;
+    }
+
+    .oak .left h1{
+        margin-top: 40px;
+        margin-bottom: 0;
+        font-size: 25px;
+    }
+
+    .oak .left p{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 325px;
+        align-self: center;
+    }
+
+    .oak .right{
+        order: 1;
+    }
+
+    .oak .right img{
+        width: 350px;
+        align-self: center;
+        margin-top: 50px;
+    }
+
+    /* SUSTAINABILITY */
+
+    .sustainability{
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .sustainability .left img{
+        width: 300px;
+        padding-left: 0;
+    }
+
+    .sustainability .right h1{
+        padding-top: 40px;
+        font-size: 25px;
+        z-index: 1;
+    }
+
+    .sustainability .right p{
+        margin-top: 30px;
+        padding-bottom: 30px;
+        width: 325px;
+        align-self: center;
+    }
+
+    /* INNOVATION */
+
+    .innovation{
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .innovation .left{
+        order: 2;
+        margin-top: 0;
+    }
+
+    .innovation .left h1{
+        font-size: 25px;
+        z-index: 1;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .innovation .left p{
+        margin-bottom: 30px;
+        width: 325px;
+        align-self: center;
+    }
+
+    .innovation .right{
+        order: 1;
+    }
+
+    .innovation .right img{
+        width: 350px;
+        align-self: center;
+        margin-top: 50px;
+    }
+
+    /* PREFOOTER */
+
+    .minilogo-lines-3 img{
+        width: 15px;
+    }
+    
+    .minilogo-lines-3 hr{
+        width: 45px;
+    }
+
+    .prefooter p{
+        text-align: center;
+        font-size: 13px;
+        line-height: 1.3;
+        font-family: 'AlbertSans';
+        color: #d1d7db;
+        margin-top: 30px;
+    }
+    
+    .prefooter-text{
+        width: 70%;
+        margin-top: 100px;
+    }
+
+}
